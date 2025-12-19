@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(/assets/Gemini_Generated_Image_dyxd0tdyxd0tdyxd.png);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+
+.container{
+    height: 650px;
+    width: 450px;
+    background:#1c1c1c;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #9EFE16;
+    
+}
+
+.input-wrapper{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#input{
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 4rem;
+    text-align: right;
+    border: 1px solid #9EFE16;
+}
+
+.buttons-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: 
+    "clear clear delete divide"
+    "seven eigth nine times"
+    "four five six minus"
+    "one two three plus"
+    "zero zero comma assign"
+    ;
+}
+
+.buttons-wrapper button{
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 1px solid #9EFE16;
+}
+
+.buttons-wrapper button:hover{
+    cursor: pointer;
+}
+
+
