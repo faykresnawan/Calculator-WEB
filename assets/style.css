@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:url(/assets/Gemini_Generated_Image_dyxd0tdyxd0tdyxd.png);
+    /* background:url(/assets/Gemini_Generated_Image_dyxd0tdyxd0tdyxd.png); */
     background-size: cover;
     background-repeat: no-repeat ;
     background-position: center;
@@ -34,12 +34,22 @@ body{
 }
 
 #input{
+    position: relative;
+    background: gray;
     height: 100px;
     width: 100%;
     border-radius: 15px;
-    font-size: 4rem;
-    text-align: right;
     border: 1px solid #9EFE16;
+    overflow: hidden;
+}
+
+#display{
+    font-size: 4.5rem;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+    
 }
 
 .buttons-wrapper{
